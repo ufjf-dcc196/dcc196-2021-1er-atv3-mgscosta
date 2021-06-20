@@ -39,12 +39,18 @@ public class MainActivity extends AppCompatActivity {
         result.setText(resultadoCalculo.toString());
     }
 
-//    public void multiply(View view) {
-//
-//    }
-//
-//    public void divide(View view) {
-//
-//    }
+    public void multiply(View view) {
+        num1 = Double.parseDouble(number_one.getText().toString());
+        num2 = Double.parseDouble(number_two.getText().toString());
+        resultadoCalculo = num1 * num2;
+        result.setText(resultadoCalculo.toString());
+    }
+
+    public void divide(View view) {
+        num1 = Double.parseDouble(number_one.getText().toString());
+        num2 = Double.parseDouble(number_two.getText().toString());
+        resultadoCalculo = num1 / num2;
+        result.setText(resultadoCalculo.toString());
+    }
 
 }
